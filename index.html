@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 19</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #ddd;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #aaa;
+        }
+
+        header h1 {
+            margin: 5px;
+            font-size: 30px;
+        }
+
+        header p {
+            margin: 5px;
+        }
+
+        /* BAGIAN UTAMA */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 15px auto;
+        }
+
+        /* INTRO */
+        .intro {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .intro h2 {
+            margin: 0 0 10px 0;
+        }
+
+        /* 6 ANGGOTA */
+        .anggota-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        /* KARTU ANGGOTA */
+        .anggota {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        /* FOTO + BIODATA */
+        .data-anggota {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* FOTO */
+        .foto {
+            width: 120px;
+            height: 120px;
+            background-color: #ddd;
+            border: 1px solid #bbb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* INFORMASI ANGGOTA */
+        .info {
+            flex: 1;
+        }
+
+        .info h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+
+        /* BIODATA */
+        .biodata {
+            margin: 6px 0;
+            font-size: 14px;
+        }
+
+        /* INFORMASI TAMBAHAN */
+        .tambahan {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            width: 90%;
+            max-width: 1100px;
+            margin: 15px auto;
+            padding: 15px;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* UNTUK HP */
+        @media (max-width: 700px) {
+            .anggota-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>👥 Kelompok 19</h1>
+        <p>Desain UI/UX & Pemrograman Web</p>
+    </header>
+
+    <div class="container">
+
+        <!-- INTRO -->
+        <div class="intro">
+            <h2>👥 Intro</h2>
+
+            <p>
+                Kami adalah Kelompok 19 yang mempelajari
+                Desain UI/UX dan Pemrograman Web.
+            </p>
+        </div>
+
+        <!-- DAFTAR ANGGOTA -->
+        <div class="anggota-container">
+
+            <!-- ANGGOTA 1 -->
+            <div class="anggota">
+
+                <div class="data-anggota">
+
+                    <div class="foto">
+                        <img src="assets/img/Sofwatunnisa.jpeg" alt="">
+                    </div>
+
+                    <div class="info">
+
+                        <h3>
+                            Sofwatunnisa
+                            
+                        </h3>
+
+                        <p class="biodata">Kelas : TI01</p>
+                        <p class="biodata">NIM : 0110226156</p>
+                        <p class="biodata">Tanggal Lahir : 21 Juli 2006</p>
+                        <p class="biodata">Hobi : Menggambar</p>
+                        <p class="biodata">Minat : Artificial Intelligence</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tambahan">
+                    Informasi anggota 1
+                </div>
+
+            </div>
+
+
+            <!-- ANGGOTA 2 -->
+            <div class="anggota">
+
+                <div class="data-anggota">
+
+                    <div class="foto">
+                        <img src="assets/img/Syakina.jpeg" alt="">
+                    </div>
+
+                    <div class="info">
+
+                        <h3>
+                            Syakina Rahma Azalia
+                           
+                        </h3>
+
+                        <p class="biodata">Kelas : TI01</p>
+                        <p class="biodata">NIM : 0110226149</p>
+                        <p class="biodata">Tanggal Lahir : 11 Februari 2008</p>
+                        <p class="biodata">Hobi : Olahraga</p>
+                        <p class="biodata">Minat : Artificial Intelligence</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tambahan">
+                    Informasi anggota 2
+                </div>
+
+            </div>
+
+
+            <!-- ANGGOTA 3 -->
+            <div class="anggota">
+
+                <div class="data-anggota">
+
+                    <div class="foto">
+                        <img src="assets/img/Syeikhal.jpeg" alt="">
+                    </div>
+
+                    <div class="info">
+
+                        <h3>
+                            Syeikhal Islami
+                          
+                        </h3>
+
+                        <p class="biodata">Kelas : TI01</p>
+                        <p class="biodata">NIM : 0110226041</p>
+                        <p class="biodata">Tanggal Lahir : 05 Desember 2007</p>
+                        <p class="biodata">Hobi : Memasak</p>
+                        <p class="biodata">Minat : Artificial Intelligence</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tambahan">
+                    Informasi anggota 3
+                </div>
+
+            </div>
+
+
+            <!-- ANGGOTA 4 -->
+            <div class="anggota">
+
+                <div class="data-anggota">
+
+                    <div class="foto">
+                        <img src="assets/img/Syifa.jpeg" alt="">
+                    </div>
+
+                    <div class="info">
+
+                        <h3>
+                            Syifa Maharani
+                           
+                        </h3>
+
+                        <p class="biodata">Kelas : TI01</p>
+                        <p class="biodata">NIM : 0110226011</p>
+                        <p class="biodata">Tanggal Lahir : 03 November 2007</p>
+                        <p class="biodata">Hobi : Badminton</p>
+                        <p class="biodata">Minat : Artificial Intelligence</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tambahan">
+                    Informasi anggota 4
+                </div>
+
+            </div>
+
+
+            <!-- ANGGOTA 5 -->
+            <div class="anggota">
+
+                <div class="data-anggota">
+
+                    <div class="foto">
+                       <img src="assets/img/Thoifattan.jpeg" alt="">
+                    </div>
+
+                    <div class="info">
+
+                        <h3>
+                            Thoifattan Faiz Ramadhan
+                         
+                        </h3>
+
+                        <p class="biodata">Kelas : TI01</p>
+                        <p class="biodata">NIM : 0110226141</p>
+                        <p class="biodata">Tanggal Lahir : 28 September 2007</p>
+                        <p class="biodata">Hobi : Lari</p>
+                        <p class="biodata">Minat : Cyber Security</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tambahan">
+                    Informasi anggota 5
+                </div>
+
+            </div>
+
+
+            <!-- ANGGOTA 6 -->
+            <div class="anggota">
+
+                <div class="data-anggota">
+
+                    <div class="foto">
+                        <img src="assets/img/Wahid.jpeg" alt="">
+                    </div>
+
+                    <div class="info">
+
+                        <h3>
+                            Wahid Sofiana
+                           
+                        </h3>
+
+                        <p class="biodata">Kelas : TI01</p>
+                        <p class="biodata">NIM : 0110226052</p>
+                        <p class="biodata">Tanggal Lahir : 02 Agustus 2007</p>
+                        <p class="biodata">Hobi : Otomotif</p>
+                        <p class="biodata">Minat : Artificial Intelligence</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tambahan">
+                    Informasi anggota 6
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        Footer
+    </footer>
+
+</body>
+</html>
